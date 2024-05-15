@@ -1,7 +1,10 @@
 class Bank:
+    # constructor
     def __init__(self,name,amount) :
         self.name = name
         self.amount = amount
+    
+    # method
     def loan(self,tk):
         if tk>self.amount:
             print("You can not take loan more than your money")

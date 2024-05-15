@@ -23,9 +23,19 @@ class Dog : public Animal {
 
 class Cat : public Animal {
   public:
+//   here changing the base class method
     void animalSound() {
       cout << "The cat says: meow meow"<<endl;
     }
 };
 
 // here we are using polymorphism. 'animalSound' method is changing its character in every child class.
+
+
+int main(){
+
+    Cat billu = Cat();
+    billu.animalSound();
+    
+    return 0;
+}
